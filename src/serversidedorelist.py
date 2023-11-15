@@ -1,4 +1,4 @@
-blocks = [
+return [
     {'name': 'stone', 'rarity': 1/1},
     {'name': 'placeholder', 'rarity': 1/7},
     {'name': 'the ore', 'rarity': 1/23},
