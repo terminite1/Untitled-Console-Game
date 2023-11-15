@@ -72,6 +72,10 @@
         "rarity": 0.00125
     },
     {
+        "name": "Garnet",
+        "rarity": 0.001176470588235294
+    },
+    {
         "name": "Yieeyj",
         "rarity": 0.001001001001001001
     },
@@ -116,6 +120,10 @@
         "rarity": 0.00025
     },
     {
+        "name": "german",
+        "rarity": 0.00022222222222222223
+    },
+    {
         "name": "Flushing Bite",
         "rarity": 0.00020024028834601522
     },
@@ -158,6 +166,10 @@
     {
         "name": "coffee creamer",
         "rarity": 4.347826086956522e-05
+    },
+    {
+        "name": "Crantite",
+        "rarity": 4.2553191489361704e-05
     },
     {
         "name": "ball",
@@ -236,6 +248,10 @@
         "rarity": 1.2857271429857156e-05
     },
     {
+        "name": "Granitoite",
+        "rarity": 1.269196598553116e-05
+    },
+    {
         "name": "dinosaur poop",
         "rarity": 1.25e-05
     },
@@ -296,8 +312,20 @@
         "rarity": 3.96000396000396e-06
     },
     {
+        "name": "furry ore",
+        "rarity": 3.636363636363636e-06
+    },
+    {
+        "name": "Aurority",
+        "rarity": 3.4482758620689654e-06
+    },
+    {
         "name": "albino fart",
         "rarity": 3.3333333333333333e-06
+    },
+    {
+        "name": "grapefruit",
+        "rarity": 2.8571428571428573e-06
     },
     {
         "name": "painite",
@@ -332,6 +360,10 @@
         "rarity": 1.5007511259385321e-06
     },
     {
+        "name": "grape",
+        "rarity": 1.5000015000015e-06
+    },
+    {
         "name": "beryl",
         "rarity": 1.4285714285714286e-06
     },
@@ -348,8 +380,20 @@
         "rarity": 1.25e-06
     },
     {
+        "name": "Distraught Singularity",
+        "rarity": 1.176470588235294e-06
+    },
+    {
         "name": "red diamond",
         "rarity": 1.111111111111111e-06
+    },
+    {
+        "name": "annoying orange",
+        "rarity": 1.110802554845876e-06
+    },
+    {
+        "name": "captain",
+        "rarity": 1.0526315789473683e-06
     },
     {
         "name": "jakpot 72",
@@ -448,6 +492,10 @@
         "rarity": 2.6666666666666667e-07
     },
     {
+        "name": "Lavender Spacedust",
+        "rarity": 2.2727272727272726e-07
+    },
+    {
         "name": "manganese",
         "rarity": 2e-07
     },
@@ -464,16 +512,48 @@
         "rarity": 1.6982256429015273e-07
     },
     {
+        "name": "googoo zaza",
+        "rarity": 1.3333333333333334e-07
+    },
+    {
+        "name": "cool lookin sphere",
+        "rarity": 1.2903225806451614e-07
+    },
+    {
+        "name": "Skaniukea Ultracluster",
+        "rarity": 1.285897930308704e-07
+    },
+    {
+        "name": "big hole",
+        "rarity": 1.25e-07
+    },
+    {
+        "name": "the roommates door",
+        "rarity": 1.2121212121212122e-07
+    },
+    {
         "name": "My China",
         "rarity": 1.1250001125000112e-07
     },
     {
+        "name": "Athene",
+        "rarity": 1.1111111111111111e-07
+    },
+    {
         "name": "ADRENALINE",
-        "rarity": 1e-07
+        "rarity": 1.00000010000001e-07
     },
     {
         "name": "Arccentuate",
         "rarity": 4.545454545454546e-08
+    },
+    {
+        "name": "Cyhiraeth",
+        "rarity": 2.994011976047904e-08
+    },
+    {
+        "name": "ninal",
+        "rarity": 2.5e-08
     },
     {
         "name": "Juicer 618",
@@ -482,6 +562,10 @@
     {
         "name": "Genuinium+Accesinite+Fire Crystal+Pandorite Fusion 72",
         "rarity": 1.2855489971702238e-08
+    },
+    {
+        "name": "Stellar Shapeshifting",
+        "rarity": 1.1363636363636364e-08
     },
     {
         "name": "legacy blackhole 1236",
@@ -500,12 +584,20 @@
         "rarity": 1.8000000018e-09
     },
     {
+        "name": "Neverending Vortex",
+        "rarity": 1.5384615384615385e-09
+    },
+    {
         "name": "petrified wood 2",
         "rarity": 4.656612875245797e-10
     },
     {
         "name": "NILNALNULNEL",
         "rarity": 4.2857142863265304e-10
+    },
+    {
+        "name": "Menger Sponge",
+        "rarity": 2.857142857142857e-10
     },
     {
         "name": "Grand Quasar Legacy 5171 A 160529 1236 V HR",
