@@ -1,4 +1,4 @@
-# REx-Reincarnated-Fangame
+# Just a REx Reincarnated fangame, I guess
 REx Reincarnated inspired game made in Python<br>
 [made by terminite]
 
