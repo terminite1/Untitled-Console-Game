@@ -106,7 +106,7 @@ blocks = [
     {'name': 'roxanite', 'rarity': 1/2500000},
     {'name': 'cool lookin ball', 'rarity': 1/2750000},
     {'name': 'cool lookin cube', 'rarity': 1/3000000},
-    {'name': 'π', 'rarity': 1/3141592},
+    {'name': 'piepypi', 'rarity': 1/3141592},
     {'name': 'cool lookin dodecahedron', 'rarity': 1/3250000},
     {'name': 'cool lookin tricycle', 'rarity': 1/3500000},
     {'name': 'cool lookin tricycle 2', 'rarity': 1/3500000},
