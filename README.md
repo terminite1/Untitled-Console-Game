@@ -25,18 +25,28 @@ There is no objective. Just get rare ores and flex.<br>
 When closing the game your stats can reset because the inventory file gets emptied due to unknown reasons<br>
 When opening the game, an index of all the ores gets created in the folder containing the .py file<br>
 When a new ore gets added, it gets fetched from the 'serversidedorelist.json' file.<br>
+Press "CTRL + ~" before quitting to safely exit the mine.<br>
+There's enigmatic+ Discord tracking built into the game. Add your own webhook link and it will work.<br>
 If it stops generating ores... **Prepare**
 
 # INSTALLATION TUTORIAL
 
-You need 3 modules: Colorama, Requests, and playsound v1.2.2
+You need 5 modules: Colorama, Requests, playsound v1.2.2, discord_webhook, and keyboard
 
 Insert these commands into Command Prompt:
 ```
 pip install colorama
 pip install requests
 pip install playsound==1.2.2
+pip install discord_webhook
+pip install keyboard
 ```
 We install playsound 1.2.2 because on newer versions it can error.
+
+I have also prepared a requirements.txt file if you want to do all of that in an instant.
+Run the following command:
+```
+pip install -r requirements.txt
+```
 
 Enjoy
