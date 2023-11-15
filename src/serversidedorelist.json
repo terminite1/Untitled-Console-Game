@@ -1,0 +1,378 @@
+[
+    {
+        "name": "stone",
+        "rarity": 1.0
+    },
+    {
+        "name": "placeholder",
+        "rarity": 0.14285714285714285
+    },
+    {
+        "name": "the ore",
+        "rarity": 0.043478260869565216
+    },
+    {
+        "name": "iron",
+        "rarity": 0.01818181818181818
+    },
+    {
+        "name": "gold",
+        "rarity": 0.01
+    },
+    {
+        "name": "poop (regular)",
+        "rarity": 0.004
+    },
+    {
+        "name": "emerald",
+        "rarity": 0.0029411764705882353
+    },
+    {
+        "name": "sapphire",
+        "rarity": 0.002
+    },
+    {
+        "name": "your kitchen",
+        "rarity": 0.002
+    },
+    {
+        "name": "diamond",
+        "rarity": 0.0014705882352941176
+    },
+    {
+        "name": "ruby",
+        "rarity": 0.00125
+    },
+    {
+        "name": "amethyst",
+        "rarity": 0.001
+    },
+    {
+        "name": "topaz",
+        "rarity": 0.0008333333333333334
+    },
+    {
+        "name": "platinum",
+        "rarity": 0.00078125
+    },
+    {
+        "name": "obsidian",
+        "rarity": 0.0006666666666666666
+    },
+    {
+        "name": "adamantium",
+        "rarity": 0.0005
+    },
+    {
+        "name": "uranium",
+        "rarity": 0.0004
+    },
+    {
+        "name": "quartz",
+        "rarity": 0.0003333333333333333
+    },
+    {
+        "name": "neptunium",
+        "rarity": 0.00025
+    },
+    {
+        "name": "plutonium",
+        "rarity": 0.0002
+    },
+    {
+        "name": "flaming minion",
+        "rarity": 0.00019113149847094801
+    },
+    {
+        "name": "neutronium",
+        "rarity": 0.00016666666666666666
+    },
+    {
+        "name": "gilded",
+        "rarity": 0.0001
+    },
+    {
+        "name": "chicken ore",
+        "rarity": 6.666666666666667e-05
+    },
+    {
+        "name": "thing",
+        "rarity": 5e-05
+    },
+    {
+        "name": "ball",
+        "rarity": 4e-05
+    },
+    {
+        "name": "cube",
+        "rarity": 3.3333333333333335e-05
+    },
+    {
+        "name": "dodecahedron",
+        "rarity": 3.000030000300003e-05
+    },
+    {
+        "name": "tricycle",
+        "rarity": 3.000030000300003e-05
+    },
+    {
+        "name": "tesseract",
+        "rarity": 2.5e-05
+    },
+    {
+        "name": "hypercube",
+        "rarity": 2.2222222222222223e-05
+    },
+    {
+        "name": "spinning thing",
+        "rarity": 2e-05
+    },
+    {
+        "name": "cylinder",
+        "rarity": 1.8181818181818182e-05
+    },
+    {
+        "name": "invisible staircase",
+        "rarity": 1.8035891423933627e-05
+    },
+    {
+        "name": "sphere",
+        "rarity": 1.6666666666666667e-05
+    },
+    {
+        "name": "dinosaur",
+        "rarity": 1.6666666666666667e-05
+    },
+    {
+        "name": "dinosaur egg",
+        "rarity": 1.5384615384615384e-05
+    },
+    {
+        "name": "dinosaur bone",
+        "rarity": 1.4285714285714285e-05
+    },
+    {
+        "name": "dinosaur fossil",
+        "rarity": 1.3333333333333333e-05
+    },
+    {
+        "name": "super flart",
+        "rarity": 1.2857271429857156e-05
+    },
+    {
+        "name": "dinosaur poop",
+        "rarity": 1.25e-05
+    },
+    {
+        "name": "dinosaur meat",
+        "rarity": 1.1764705882352942e-05
+    },
+    {
+        "name": "dinosaur skin",
+        "rarity": 1.1111111111111112e-05
+    },
+    {
+        "name": "dinosaur blood",
+        "rarity": 1.0526315789473684e-05
+    },
+    {
+        "name": "alexandrite",
+        "rarity": 1e-05
+    },
+    {
+        "name": "poudretteite",
+        "rarity": 8e-06
+    },
+    {
+        "name": "musgravite",
+        "rarity": 6.666666666666667e-06
+    },
+    {
+        "name": "benitoite",
+        "rarity": 6.666666666666667e-06
+    },
+    {
+        "name": "red beryl",
+        "rarity": 5.7142857142857145e-06
+    },
+    {
+        "name": "grandidierite",
+        "rarity": 5e-06
+    },
+    {
+        "name": "black opal",
+        "rarity": 5e-06
+    },
+    {
+        "name": "jeremejevite",
+        "rarity": 4.444444444444444e-06
+    },
+    {
+        "name": "F25 key",
+        "rarity": 3.96000396000396e-06
+    },
+    {
+        "name": "albino fart",
+        "rarity": 3.3333333333333333e-06
+    },
+    {
+        "name": "painite",
+        "rarity": 2.5e-06
+    },
+    {
+        "name": "diamond ore",
+        "rarity": 2.222222222222222e-06
+    },
+    {
+        "name": "tanzanite",
+        "rarity": 2e-06
+    },
+    {
+        "name": "Legacy Quasar Quasar Quasar 160529 618 618 V",
+        "rarity": 2e-06
+    },
+    {
+        "name": "taaffeite",
+        "rarity": 1.6666666666666667e-06
+    },
+    {
+        "name": "beryl",
+        "rarity": 1.4285714285714286e-06
+    },
+    {
+        "name": "cool lookin pebble",
+        "rarity": 1.3333333333333334e-06
+    },
+    {
+        "name": "jadeite",
+        "rarity": 1.25e-06
+    },
+    {
+        "name": "red diamond",
+        "rarity": 1.111111111111111e-06
+    },
+    {
+        "name": "jakpot 72",
+        "rarity": 1.000001000001e-06
+    },
+    {
+        "name": "serendibite",
+        "rarity": 1e-06
+    },
+    {
+        "name": "blue garnet",
+        "rarity": 1e-06
+    },
+    {
+        "name": "kyawthuite",
+        "rarity": 1e-06
+    },
+    {
+        "name": "cool diamond",
+        "rarity": 9.99999000001e-07
+    },
+    {
+        "name": "cool emerald",
+        "rarity": 9.99999000001e-07
+    },
+    {
+        "name": "cool sapphire",
+        "rarity": 9.99999000001e-07
+    },
+    {
+        "name": "cool ruby",
+        "rarity": 9.99999000001e-07
+    },
+    {
+        "name": "netherine",
+        "rarity": 8e-07
+    },
+    {
+        "name": "enderite",
+        "rarity": 6.666666666666667e-07
+    },
+    {
+        "name": "bedrock",
+        "rarity": 5.714285714285714e-07
+    },
+    {
+        "name": "bedrockium",
+        "rarity": 5e-07
+    },
+    {
+        "name": "bedrockite",
+        "rarity": 4.4444444444444444e-07
+    },
+    {
+        "name": "roentgenium",
+        "rarity": 4.4444424691366805e-07
+    },
+    {
+        "name": "roxanite",
+        "rarity": 4e-07
+    },
+    {
+        "name": "cool lookin ball",
+        "rarity": 3.6363636363636366e-07
+    },
+    {
+        "name": "cool lookin cube",
+        "rarity": 3.3333333333333335e-07
+    },
+    {
+        "name": "cool lookin dodecahedron",
+        "rarity": 3.076923076923077e-07
+    },
+    {
+        "name": "cool lookin tricycle",
+        "rarity": 2.857142857142857e-07
+    },
+    {
+        "name": "spectral hole",
+        "rarity": 2.6666666666666667e-07
+    },
+    {
+        "name": "manganese",
+        "rarity": 2e-07
+    },
+    {
+        "name": "ADRENALINE",
+        "rarity": 1e-07
+    },
+    {
+        "name": "cool lookin tricycle",
+        "rarity": 2.857142857142857e-07
+    },
+    {
+        "name": "cool lookin tesseract",
+        "rarity": 2.6666666666666667e-07
+    },
+    {
+        "name": "guga leaf",
+        "rarity": 1.8181818181818183e-07
+    },
+    {
+        "name": "legacy blackhole 1236",
+        "rarity": 8.090614886731392e-09
+    },
+    {
+        "name": "Lost RGB Sharkite Lamp ft. Stormal",
+        "rarity": 2.25000000225e-09
+    },
+    {
+        "name": "blutoof devious",
+        "rarity": 1.8406782598989036e-09
+    },
+    {
+        "name": "petrified wood 2",
+        "rarity": 4.656612875245797e-10
+    },
+    {
+        "name": "Grand Quasar Legacy 5171 A 160529 1236 V HR",
+        "rarity": 4.187111783072674e-11
+    },
+    {
+        "name": "the",
+        "rarity": 5.88235294117647e-14
+    }
+]

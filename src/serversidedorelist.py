@@ -1,4 +1,5 @@
-[
+import json
+blocks = [
     {'name': 'stone', 'rarity': 1/1},
     {'name': 'placeholder', 'rarity': 1/7},
     {'name': 'the ore', 'rarity': 1/23},
@@ -94,3 +95,5 @@
     {'name': 'Grand Quasar Legacy 5171 A 160529 1236 V HR', 'rarity': 1/23882811155},
     {'name': 'the', 'rarity': 1/17000000000000}
 ]
+
+print(json.dumps(blocks, indent=4))
