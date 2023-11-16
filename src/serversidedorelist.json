@@ -4,6 +4,10 @@
         "rarity": 1.0
     },
     {
+        "name": "crystaliss",
+        "rarity": 0.3333333333333333
+    },
+    {
         "name": "drycicle",
         "rarity": 0.2
     },
@@ -36,12 +40,28 @@
         "rarity": 0.016666666666666666
     },
     {
+        "name": "cave exclusive",
+        "rarity": 0.015625
+    },
+    {
         "name": "Potassium V6",
         "rarity": 0.015384615384615385
     },
     {
+        "name": "nickel (the coin)",
+        "rarity": 0.013333333333333334
+    },
+    {
         "name": "gold",
         "rarity": 0.01
+    },
+    {
+        "name": "grass",
+        "rarity": 0.01
+    },
+    {
+        "name": "Not So Rare Gold",
+        "rarity": 0.00909090909090909
     },
     {
         "name": "2 whole bytes",
@@ -54,6 +74,14 @@
     {
         "name": "emerald",
         "rarity": 0.0029411764705882353
+    },
+    {
+        "name": "copper",
+        "rarity": 0.0025
+    },
+    {
+        "name": "tix",
+        "rarity": 0.002380952380952381
     },
     {
         "name": "sapphire",
@@ -144,12 +172,24 @@
         "rarity": 0.00016666666666666666
     },
     {
+        "name": "a nice cherry",
+        "rarity": 0.0001125112511251125
+    },
+    {
         "name": "gilded",
         "rarity": 0.0001
     },
     {
         "name": "ultrakillium",
         "rarity": 9.999000099990002e-05
+    },
+    {
+        "name": "a nice apple",
+        "rarity": 9.998000399920016e-05
+    },
+    {
+        "name": "malformed dragonfruit",
+        "rarity": 7.547169811320755e-05
     },
     {
         "name": "chicken ore",
@@ -228,6 +268,10 @@
         "rarity": 1.6666666666666667e-05
     },
     {
+        "name": "terminite",
+        "rarity": 1.6e-05
+    },
+    {
         "name": "dinosaur",
         "rarity": 1.6666666666666667e-05
     },
@@ -280,6 +324,10 @@
         "rarity": 6.666666666666667e-06
     },
     {
+        "name": "Legacy Orb",
+        "rarity": 6.666666666666667e-06
+    },
+    {
         "name": "benitoite",
         "rarity": 6.666666666666667e-06
     },
@@ -300,6 +348,14 @@
         "rarity": 4.854368932038835e-06
     },
     {
+        "name": "stook",
+        "rarity": 4.651162790697674e-06
+    },
+    {
+        "name": "Me when the",
+        "rarity": 4.5000045000045e-06
+    },
+    {
         "name": "jeremejevite",
         "rarity": 4.444444444444444e-06
     },
@@ -314,6 +370,10 @@
     {
         "name": "furry ore",
         "rarity": 3.636363636363636e-06
+    },
+    {
+        "name": "shotgun shell",
+        "rarity": 3.5087719298245615e-06
     },
     {
         "name": "Aurority",
@@ -340,6 +400,10 @@
         "rarity": 2.222222222222222e-06
     },
     {
+        "name": "paracetamol",
+        "rarity": 2.1052631578947366e-06
+    },
+    {
         "name": "tanzanite",
         "rarity": 2e-06
     },
@@ -352,6 +416,14 @@
         "rarity": 1.8333284444574814e-06
     },
     {
+        "name": "the magic word",
+        "rarity": 1.8000018000018e-06
+    },
+    {
+        "name": "SUPERROBUX",
+        "rarity": 1.6666694444490742e-06
+    },
+    {
         "name": "taaffeite",
         "rarity": 1.6666666666666667e-06
     },
@@ -362,6 +434,10 @@
     {
         "name": "grape",
         "rarity": 1.5000015000015e-06
+    },
+    {
+        "name": "beanosium",
+        "rarity": 1.43534626293247e-06
     },
     {
         "name": "beryl",
@@ -456,6 +532,10 @@
         "rarity": 4.161395565616885e-07
     },
     {
+        "name": "Legacy Quasar Rotary Tixianite",
+        "rarity": 4.0816326530612243e-07
+    },
+    {
         "name": "roxanite",
         "rarity": 4e-07
     },
@@ -492,12 +572,24 @@
         "rarity": 2.6666666666666667e-07
     },
     {
+        "name": "slightly heated quasar",
+        "rarity": 2.5e-07
+    },
+    {
+        "name": "Illusory Bubblegun",
+        "rarity": 2.3430178069353326e-07
+    },
+    {
         "name": "Lavender Spacedust",
         "rarity": 2.2727272727272726e-07
     },
     {
         "name": "manganese",
         "rarity": 2e-07
+    },
+    {
+        "name": "SPECTRAL OXYGEN",
+        "rarity": 1.9047619047619048e-07
     },
     {
         "name": "guga leaf",
@@ -530,6 +622,10 @@
     {
         "name": "the roommates door",
         "rarity": 1.2121212121212122e-07
+    },
+    {
+        "name": "YOUR INVENTORY HAS BEEN WIPED",
+        "rarity": 1.1764705882352942e-07
     },
     {
         "name": "My China",

@@ -3,11 +3,108 @@ import time
 import os
 import requests
 import keyboard
-from playsound import playsound
+import yaml
 from colorama import Fore, Back, Style, just_fix_windows_console
 from discord_webhook import DiscordWebhook, DiscordEmbed
+from playsound import playsound
 
-webhook = DiscordWebhook(url='YourWebhookHere')
+import os
+import yaml
+from discord_webhook import DiscordWebhook
+
+CONFIG_FILE = 'config.yaml'
+
+if not os.path.exists(CONFIG_FILE):
+    print("Welcome to Untitled Console Game! This is your first time running the program, so I'll give you a quick rundown of how it works.")
+    print("You can press 'ctrl + ~' to pause the program. When you pause the program, it will save your inventory to a file called 'inventory.txt'.")
+    print("There is also a config file called 'config.yaml'. You can edit this file to change the program's settings. If you want to reset the config file, delete it and run the program again.")
+    print("There is NO objective. You just mine ores. That's it.")
+    print("For more information, check out the README.md file on GitHub. Or join the Discord. Or something. I don't know. I'm not your mom. I'm just a program. I don't know what you want from me.\nhttps://discord.gg/TrNUM7NST8")
+    print("Anyways, let's get started.")
+    print("We need to set up the config file. This file stores your settings for the program.")
+    print("After this, you're good to go. Happy mining!")
+    with open(CONFIG_FILE, 'w') as f:
+        config = {
+            'print_attempt': None,
+            'enable_tracking': None,
+            'print_inventory_on_pause': None,
+            'webhook': ''
+        }
+        yaml.dump(config, f)
+
+with open(CONFIG_FILE, 'r') as f:
+    config = yaml.safe_load(f)
+    print("Loaded config file.")
+
+if config['print_attempt'] == None:
+    print("If you set this to True, the program will print every 10000 attempts. If you set this to False, the program will only print when it finds an ore.")
+    print_attempt = input('Please enter a value for print_attempt (True/False): ')
+    config['print_attempt'] = print_attempt
+    with open(CONFIG_FILE, 'w') as f:
+        yaml.dump(config, f)
+
+if config['enable_tracking'] == None:
+    print("If you set this to True, the program will send a Discord webhook when it finds an ore.")
+    enable_tracking = input('Please enter a value for enable_tracking (True/False): ')
+    config['enable_tracking'] = enable_tracking
+    with open(CONFIG_FILE, 'w') as f:
+        yaml.dump(config, f)
+
+if config['print_inventory_on_pause'] == None:
+    print("If you set this to True, the program will print your inventory when you pause your mining.")
+    inventory_print = input('Please enter a value for print_inventory_on_pause (True/False): ')
+    config['print_inventory_on_pause'] = inventory_print
+    with open(CONFIG_FILE, 'w') as f:
+        yaml.dump(config, f)
+
+if config['webhook'] == '':
+    print("Set a URL to enable Discord webhooks.")
+    webhook_url = input('Please enter a Discord webhook URL (leave blank to ignore): ')
+    if webhook_url != '':
+        webhook = DiscordWebhook(url=webhook_url)
+        config['webhook'] = webhook_url
+        with open(CONFIG_FILE, 'w') as f:
+            yaml.dump(config, f)
+    else:
+        config['webhook'] = None
+        with open(CONFIG_FILE, 'w') as f:
+            yaml.dump(config, f)
+
+print_attempt = config['print_attempt']
+enable_tracking = config['enable_tracking']
+webhook_url = config['webhook']
+print_inventory_on_pause = config['print_inventory_on_pause']
+webhook = DiscordWebhook(url=webhook_url)
+
+github_url = 'https://raw.githubusercontent.com/terminite1/REx-Reincarnated-Fangame/main/src/rex%20but%20real.py'
+
+response = requests.get(github_url)
+
+if response.status_code == 200:
+    print("Checking for updates...")
+    file_contents = response.content.decode('utf-8')
+
+    with open(__file__, 'r') as f:
+        current_file_contents = f.read()
+
+    if file_contents == current_file_contents:
+        print('This is the newest version.')
+    else:
+        print('There is a newer version available.')
+        print("Would you like to update? (y/n)")
+        update = input('Please enter a value for update (y/n): ')
+        if update == 'y':
+            print('Installing....')
+            with open("rex but real-UPDATED.py", 'w') as f:
+                f.write(file_contents)
+            print('Installed new version as rex but real-UPDATED.py')
+            print('Please run that instead.')
+            input('Press enter to exit.')
+            exit()
+        else:
+            print('Update cancelled.')
+else:
+    print('Failed to fetch the file from GitHub.')
 
 just_fix_windows_console()
 
@@ -25,7 +122,8 @@ embed = None
 def write_ores_to_file(blocks):
     with open('ores.txt', 'w') as f:
         for block in blocks:
-            f.write(f"{block['name']}: {block['rarity'] * 100}%\n")
+            rarity = float(block['rarity'])
+            f.write(f"{block['name']}: {rarity * 100:.20f}%\n")
 
 write_ores_to_file(blocks)
 
@@ -75,15 +173,19 @@ while True:
 
         while not found:
             count += 1
+            if count % 10000 == 0 and (print_attempt==True or print_attempt=='true' or print_attempt=='True'):
+                print(Back.RED + f"Attempt {count}..." + Back.RESET)
             if select_block() == selected_block:
                 found = True
                 block_name = selected_block['name']
                 current_rarity = selected_block['rarity']
+                percentage_rarity = current_rarity * 100
+                percentage_rarity_str = '{:.20f}'.format(percentage_rarity)
                 if block_name in inventory:
                     inventory[block_name] += 1
                 else:
                     inventory[block_name] = 1
-                print(f"Found {block_name} after {count} attempts. ({current_rarity * 100}%) (Total: {inventory[block_name]})")
+                print(f"Found {block_name} after {count} attempts. ({'{:.10f}'.format(percentage_rarity)}%) (Total: {inventory[block_name]})")
                 write_inventory_to_file(inventory)
                 
                 if current_rarity <= 1/10000 and current_rarity > 1/49999: # exotic
@@ -98,37 +200,36 @@ while True:
                 elif current_rarity <= 1/500000 and current_rarity > 1/999999: # enigmatic
                     print(Fore.YELLOW + "Your vision begins to blur..." + Fore.RESET)
                     playsound('./sounds/blur.wav', True)
-                    embed = DiscordEmbed(title='An Enigmatic tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {current_rarity * 100}%', color=0xcdf600)
+                    embed = DiscordEmbed(title='An Enigmatic tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0xcdf600)
                 elif current_rarity <= 1/1000000 and current_rarity >= 1/7500000: # unfathomable
                     print(Fore.BLUE + "The ground shakes below your feet..." + Fore.RESET)
                     playsound('./sounds/unfath.wav', True)
-                    embed = DiscordEmbed(title='An Unfathomable tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {current_rarity * 100}%', color=0x032c79)
+                    embed = DiscordEmbed(title='An Unfathomable tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x032c79)
                 elif current_rarity <= 1/7500000 and current_rarity >= 1/10000000: # otherworldly
                     print(Fore.LIGHTMAGENTA_EX + "You feel a presence behind you..." + Fore.RESET)
                     playsound('./sounds/other.wav', True)
-                    embed = DiscordEmbed(title='An Otherworldly tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {current_rarity * 100}%', color=0x5e0e32)
+                    embed = DiscordEmbed(title='An Otherworldly tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x5e0e32)
                 elif current_rarity <= 1/10000000 and current_rarity >= 1/50000000: # zenith
                     print(Fore.LIGHTBLACK_EX + "An unutterable horror has spawned..." + Fore.RESET)
                     playsound('./sounds/zenith.wav', True)
-                    embed = DiscordEmbed(title='A Zenith tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {current_rarity * 100}%', color=0x000000)
+                    embed = DiscordEmbed(title='A Zenith tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x000000)
                 elif current_rarity <= 1/50000000 and current_rarity >= 1/100000000: # ethereal
                     print(Fore.CYAN + "A faint glow appears in the distance, and you hear a faint whisper..." + Fore.RESET)
                     playsound('./sounds/ethereal.mp3', True)
-                    embed = DiscordEmbed(title='An Ethereal tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {current_rarity * 100}%', color=0x1dd7a9)
+                    embed = DiscordEmbed(title='An Ethereal tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x1dd7a9)
                 elif current_rarity <= 1/100000000 and current_rarity >= 1/1000000000: # celestial
                     print(Fore.LIGHTRED_EX + "A strange light fills the air, as you feel your body begin to float..." + Fore.RESET)
                     playsound('./sounds/celestial.mp3', True)
-                    embed = DiscordEmbed(title='A Celestial tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {current_rarity * 100}%', color=0xff2626)
+                    embed = DiscordEmbed(title='A Celestial tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0xff2626)
                 elif current_rarity <= 1/1000000000: # divine
                     print(Fore.LIGHTWHITE_EX + "You feel a presence in the air, as you hear a voice say, 'You have been chosen...'" + Fore.RESET)
                     playsound('./sounds/divine.mp3', True)
-                    embed = DiscordEmbed(title='A Divine tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {current_rarity * 100}%', color=0xc1c1c1)
-                if embed != None:
+                    embed = DiscordEmbed(title='A Divine tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0xc1c1c1)
+                if embed != None and enable_tracking:
                     webhook.add_embed(embed)
                     response = webhook.execute()
                     webhook.remove_embed(0)
                 embed = None
-        time.sleep(0.01)
     else:
         if not saved:
             print("Mining disabled. Press 'ctrl + ~' to enable.")
@@ -136,4 +237,10 @@ while True:
             saved = True
             print("Saved inventory.")
             print("Please confirm that your inventory file is not empty before exiting.")
+            if print_inventory_on_pause==True or print_inventory_on_pause=='true' or print_inventory_on_pause=='True':
+                print(print_inventory_on_pause)
+                print("Inventory:")
+                for block in blocks:
+                    if block['name'] in inventory:
+                        print(f"{block['name']}: {inventory[block['name']]}")
         time.sleep(0.01)
