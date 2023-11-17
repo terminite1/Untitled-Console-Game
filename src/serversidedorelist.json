@@ -216,6 +216,14 @@
         "rarity": 4e-05
     },
     {
+        "name": "Ping",
+        "rarity": 4e-05
+    },
+    {
+        "name": "Pong",
+        "rarity": 4e-05
+    },
+    {
         "name": "cube",
         "rarity": 3.3333333333333335e-05
     },
@@ -332,6 +340,10 @@
         "rarity": 6.666666666666667e-06
     },
     {
+        "name": "gr ape fru it",
+        "rarity": 6.25e-06
+    },
+    {
         "name": "red beryl",
         "rarity": 5.7142857142857145e-06
     },
@@ -416,8 +428,16 @@
         "rarity": 1.8333284444574814e-06
     },
     {
+        "name": "absolutely nothing 618",
+        "rarity": 1.818181818181818e-06
+    },
+    {
         "name": "the magic word",
         "rarity": 1.8000018000018e-06
+    },
+    {
+        "name": "zimbabwe",
+        "rarity": 1.768143361063715e-06
     },
     {
         "name": "SUPERROBUX",
@@ -425,6 +445,10 @@
     },
     {
         "name": "taaffeite",
+        "rarity": 1.6666666666666667e-06
+    },
+    {
+        "name": "tweaking off the zaza",
         "rarity": 1.6666666666666667e-06
     },
     {
@@ -436,6 +460,10 @@
         "rarity": 1.5000015000015e-06
     },
     {
+        "name": "rasluP BGR",
+        "rarity": 1.4814814814814815e-06
+    },
+    {
         "name": "beanosium",
         "rarity": 1.43534626293247e-06
     },
@@ -444,8 +472,36 @@
         "rarity": 1.4285714285714286e-06
     },
     {
+        "name": "roygbiv nebula",
+        "rarity": 1.4285714285714286e-06
+    },
+    {
+        "name": "sugilite",
+        "rarity": 1.3333333333333334e-06
+    },
+    {
         "name": "cool lookin pebble",
         "rarity": 1.3333333333333334e-06
+    },
+    {
+        "name": "cool lookin rock",
+        "rarity": 1.3333333333333334e-06
+    },
+    {
+        "name": "cool lookin stone",
+        "rarity": 1.3333333333333334e-06
+    },
+    {
+        "name": "cool lookin crystal",
+        "rarity": 1.3333333333333334e-06
+    },
+    {
+        "name": "cool lookin gem",
+        "rarity": 1.3333333333333334e-06
+    },
+    {
+        "name": "whitecatplushie Pulsar",
+        "rarity": 1.333232007700748e-06
     },
     {
         "name": "HyperTesseract",
@@ -572,6 +628,10 @@
         "rarity": 2.6666666666666667e-07
     },
     {
+        "name": "builderman",
+        "rarity": 2.6436604757425645e-07
+    },
+    {
         "name": "slightly heated quasar",
         "rarity": 2.5e-07
     },
@@ -592,6 +652,10 @@
         "rarity": 1.9047619047619048e-07
     },
     {
+        "name": "Banana Bus",
+        "rarity": 1.833333486111124e-07
+    },
+    {
         "name": "guga leaf",
         "rarity": 1.8181818181818183e-07
     },
@@ -604,6 +668,18 @@
         "rarity": 1.6982256429015273e-07
     },
     {
+        "name": "cool lookin cylinder",
+        "rarity": 1.6666666666666668e-07
+    },
+    {
+        "name": "NUP p y",
+        "rarity": 1.410436240877122e-07
+    },
+    {
+        "name": "cool lookin invisible staircase",
+        "rarity": 1.3793103448275863e-07
+    },
+    {
         "name": "googoo zaza",
         "rarity": 1.3333333333333334e-07
     },
@@ -614,6 +690,10 @@
     {
         "name": "Skaniukea Ultracluster",
         "rarity": 1.285897930308704e-07
+    },
+    {
+        "name": "gremlins treasure",
+        "rarity": 1.285714579591904e-07
     },
     {
         "name": "big hole",
@@ -636,6 +716,18 @@
         "rarity": 1.1111111111111111e-07
     },
     {
+        "name": "cool lookin tesseract",
+        "rarity": 1.0810810810810811e-07
+    },
+    {
+        "name": "cool lookin hypercube",
+        "rarity": 1.0526315789473685e-07
+    },
+    {
+        "name": "cool lookin spinning thing",
+        "rarity": 1.0256410256410256e-07
+    },
+    {
         "name": "ADRENALINE",
         "rarity": 1.00000010000001e-07
     },
@@ -644,16 +736,32 @@
         "rarity": 4.545454545454546e-08
     },
     {
+        "name": "cheeseball generator",
+        "rarity": 4.081632653061225e-08
+    },
+    {
         "name": "Cyhiraeth",
         "rarity": 2.994011976047904e-08
+    },
+    {
+        "name": "googoo zaza 2",
+        "rarity": 2.7041644131963224e-08
     },
     {
         "name": "ninal",
         "rarity": 2.5e-08
     },
     {
+        "name": "NILNAL",
+        "rarity": 2e-08
+    },
+    {
         "name": "Juicer 618",
         "rarity": 1.6181229773462784e-08
+    },
+    {
+        "name": "Zanarchium",
+        "rarity": 1.4545454545454546e-08
     },
     {
         "name": "Genuinium+Accesinite+Fire Crystal+Pandorite Fusion 72",
@@ -684,12 +792,24 @@
         "rarity": 1.5384615384615385e-09
     },
     {
+        "name": "Norepinephrine",
+        "rarity": 1.000000001e-09
+    },
+    {
         "name": "petrified wood 2",
         "rarity": 4.656612875245797e-10
     },
     {
         "name": "NILNALNULNEL",
         "rarity": 4.2857142863265304e-10
+    },
+    {
+        "name": "THE VOID",
+        "rarity": 4e-10
+    },
+    {
+        "name": "e",
+        "rarity": 3.6787944123356733e-10
     },
     {
         "name": "Menger Sponge",
