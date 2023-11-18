@@ -8,10 +8,6 @@ from colorama import Fore, Back, Style, just_fix_windows_console
 from discord_webhook import DiscordWebhook, DiscordEmbed
 from playsound import playsound
 
-import os
-import yaml
-from discord_webhook import DiscordWebhook
-
 CONFIG_FILE = 'config.yaml'
 
 if not os.path.exists(CONFIG_FILE):
