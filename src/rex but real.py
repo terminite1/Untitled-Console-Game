@@ -154,6 +154,7 @@ def read_inventory_from_file():
 
 read_inventory_from_file()
 
+
 mining_enabled = True
 saved = False
 
@@ -188,6 +189,7 @@ while True:
                 print(f"Found {block_name} after {count} attempts. ({'{:.10f}'.format(percentage_rarity)}%) (Total: {inventory[block_name]})")
                 write_inventory_to_file(inventory)
                 
+
                 if current_rarity <= 1/10000 and current_rarity > 1/49999: # exotic
                     print(Fore.LIGHTYELLOW_EX + "A chill goes down your spine..." + Fore.RESET)
                     playsound('./sounds/chill.wav')
@@ -201,35 +203,44 @@ while True:
                     print(Fore.YELLOW + "Your vision begins to blur..." + Fore.RESET)
                     playsound('./sounds/blur.wav')
                     embed = DiscordEmbed(title='An Enigmatic tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xcdf600)
-                elif current_rarity <= 1/1000000 and current_rarity >= 1/7500000: # unfathomable
-                    print(Fore.BLUE + "The ground shakes below your feet..." + Fore.RESET)
+                elif current_rarity <= 1/1000000 and current_rarity >= 1/12500000: # unfathomable
+                    print(Fore.BLUE + "An unforeseen force violently shakes the ground..." + Fore.RESET)
                     playsound('./sounds/unfath.wav')
                     embed = DiscordEmbed(title='An Unfathomable tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x032c79)
-                elif current_rarity <= 1/7500000 and current_rarity >= 1/10000000: # otherworldly
-                    print(Fore.LIGHTMAGENTA_EX + "You feel a presence behind you..." + Fore.RESET)
+                elif current_rarity <= 1/12500000 and current_rarity >= 1/21500000: # otherworldly
+                    print(Fore.LIGHTMAGENTA_EX + "You feel a strange presence creeping up behind you..." + Fore.RESET)
                     playsound('./sounds/other.wav')
                     embed = DiscordEmbed(title='An Otherworldly tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x5e0e32)
-                elif current_rarity <= 1/10000000 and current_rarity >= 1/50000000: # zenith
-                    print(Fore.LIGHTBLACK_EX + "An unutterable horror has spawned..." + Fore.RESET)
+                elif current_rarity <= 1/21500000 and current_rarity >= 1/47500000: # zenith
+                    print(Fore.LIGHTBLACK_EX + "An unutterable horror has emerged from the depths of the earth..." + Fore.RESET)
                     playsound('./sounds/zenith.wav')
                     embed = DiscordEmbed(title='A Zenith tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x000000)
-                elif current_rarity <= 1/50000000 and current_rarity >= 1/100000000: # ethereal
-                    print(Fore.CYAN + "A faint glow appears in the distance, and you hear a faint whisper..." + Fore.RESET)
+                elif current_rarity <= 1/47500000 and current_rarity >= 1/80000000: # ethereal
+                    print(Fore.CYAN + "A faint glow appears in the distance, blinking in and out of existence..." + Fore.RESET)
                     playsound('./sounds/ethereal.mp3')
                     embed = DiscordEmbed(title='An Ethereal tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x1dd7a9)
-                elif current_rarity <= 1/100000000 and current_rarity >= 1/1000000000: # celestial
+                elif current_rarity <= 1/80000000 and current_rarity >= 1/275000000: # celestial
                     print(Fore.LIGHTRED_EX + "A strange light fills the air, as you feel your body begin to float..." + Fore.RESET)
                     playsound('./sounds/celestial.mp3')
                     embed = DiscordEmbed(title='A Celestial tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xff2626)
-                elif current_rarity <= 1/1000000000: # divine
+                elif current_rarity <= 1/275000000 and current_rarity >= 1/500000000: # cosmic
+                    print(Fore.LIGHTCYAN_EX + "The awakening of a supermassive singularity brings time itself to a halt..." + Fore.RESET)
+                    playsound('./sounds/cosmic.mp3')
+                    embed = DiscordEmbed(title='A Cosmic tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x6FA8DC)
+                elif current_rarity <= 1/500000000 and current_rarity >= 1/750000000: # mystical
+                    print(Fore.MAGENTA + "A subtle atmospheric shift catches your attention, accompanied by a soft murmur..." + Fore.RESET)
+                    playsound('./sounds/mystical.mp3')
+                    embed = DiscordEmbed(title='A Mystical tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xf300ff)
+                elif current_rarity <= 1/750000000: # divine
                     print(Fore.LIGHTWHITE_EX + "You feel a presence in the air, as you hear a voice say, 'You have been chosen...'" + Fore.RESET)
                     playsound('./sounds/divine.mp3')
-                    embed = DiscordEmbed(title='A Divine tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xc1c1c1)
-                if embed != None and enable_tracking:
+                    embed = DiscordEmbed(title='A Divine tier ore has spawned!!!', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xc1c1c1)
+                if embed != None and (enable_tracking==True or enable_tracking=='true' or enable_tracking=='True'):
                     webhook.add_embed(embed)
                     response = webhook.execute()
                     webhook.remove_embed(0)
                 embed = None
+        time.sleep(0.001)
     else:
         if not saved:
             print("Mining disabled. Press 'ctrl + ~' to enable.")
@@ -243,4 +254,4 @@ while True:
                 for block in blocks:
                     if block['name'] in inventory:
                         print(f"{block['name']}: {inventory[block['name']]}")
-        time.sleep(0.01)
+        time.sleep(0.001)
