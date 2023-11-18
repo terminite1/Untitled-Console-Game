@@ -190,41 +190,41 @@ while True:
                 
                 if current_rarity <= 1/10000 and current_rarity > 1/49999: # exotic
                     print(Fore.LIGHTYELLOW_EX + "A chill goes down your spine..." + Fore.RESET)
-                    playsound('./sounds/chill.wav', True)
+                    playsound('./sounds/chill.wav')
                 elif current_rarity <= 1/50000 and current_rarity > 1/99999: # exquisite
                     print(Fore.GREEN + "Your heart skips a beat..." + Fore.RESET)
-                    playsound('./sounds/skip.wav', True)
+                    playsound('./sounds/skip.wav')
                 elif current_rarity <= 1/100000 and current_rarity > 1/499999: # transcendent
                     print(Fore.LIGHTBLUE_EX + "You hear a ringing in your ears..." + Fore.RESET)
-                    playsound('./sounds/ringing.wav', True)
+                    playsound('./sounds/ringing.wav')
                 elif current_rarity <= 1/500000 and current_rarity > 1/999999: # enigmatic
                     print(Fore.YELLOW + "Your vision begins to blur..." + Fore.RESET)
-                    playsound('./sounds/blur.wav', True)
-                    embed = DiscordEmbed(title='An Enigmatic tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0xcdf600)
+                    playsound('./sounds/blur.wav')
+                    embed = DiscordEmbed(title='An Enigmatic tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xcdf600)
                 elif current_rarity <= 1/1000000 and current_rarity >= 1/7500000: # unfathomable
                     print(Fore.BLUE + "The ground shakes below your feet..." + Fore.RESET)
-                    playsound('./sounds/unfath.wav', True)
-                    embed = DiscordEmbed(title='An Unfathomable tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x032c79)
+                    playsound('./sounds/unfath.wav')
+                    embed = DiscordEmbed(title='An Unfathomable tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x032c79)
                 elif current_rarity <= 1/7500000 and current_rarity >= 1/10000000: # otherworldly
                     print(Fore.LIGHTMAGENTA_EX + "You feel a presence behind you..." + Fore.RESET)
-                    playsound('./sounds/other.wav', True)
-                    embed = DiscordEmbed(title='An Otherworldly tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x5e0e32)
+                    playsound('./sounds/other.wav')
+                    embed = DiscordEmbed(title='An Otherworldly tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x5e0e32)
                 elif current_rarity <= 1/10000000 and current_rarity >= 1/50000000: # zenith
                     print(Fore.LIGHTBLACK_EX + "An unutterable horror has spawned..." + Fore.RESET)
-                    playsound('./sounds/zenith.wav', True)
-                    embed = DiscordEmbed(title='A Zenith tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x000000)
+                    playsound('./sounds/zenith.wav')
+                    embed = DiscordEmbed(title='A Zenith tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x000000)
                 elif current_rarity <= 1/50000000 and current_rarity >= 1/100000000: # ethereal
                     print(Fore.CYAN + "A faint glow appears in the distance, and you hear a faint whisper..." + Fore.RESET)
-                    playsound('./sounds/ethereal.mp3', True)
-                    embed = DiscordEmbed(title='An Ethereal tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0x1dd7a9)
+                    playsound('./sounds/ethereal.mp3')
+                    embed = DiscordEmbed(title='An Ethereal tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0x1dd7a9)
                 elif current_rarity <= 1/100000000 and current_rarity >= 1/1000000000: # celestial
                     print(Fore.LIGHTRED_EX + "A strange light fills the air, as you feel your body begin to float..." + Fore.RESET)
-                    playsound('./sounds/celestial.mp3', True)
-                    embed = DiscordEmbed(title='A Celestial tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0xff2626)
+                    playsound('./sounds/celestial.mp3')
+                    embed = DiscordEmbed(title='A Celestial tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xff2626)
                 elif current_rarity <= 1/1000000000: # divine
                     print(Fore.LIGHTWHITE_EX + "You feel a presence in the air, as you hear a voice say, 'You have been chosen...'" + Fore.RESET)
-                    playsound('./sounds/divine.mp3', True)
-                    embed = DiscordEmbed(title='A Divine tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}%', color=0xc1c1c1)
+                    playsound('./sounds/divine.mp3')
+                    embed = DiscordEmbed(title='A Divine tier ore has spawned...', description=f'The ore {block_name} has spawned with rarity {percentage_rarity_str}% and {count} attempts', color=0xc1c1c1)
                 if embed != None and enable_tracking:
                     webhook.add_embed(embed)
                     response = webhook.execute()
