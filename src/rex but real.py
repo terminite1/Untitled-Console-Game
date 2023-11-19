@@ -1,10 +1,11 @@
+import os
 import random
 import time
-import os
-import requests
+
 import keyboard
+import requests
 import yaml
-from colorama import Fore, Back, Style, just_fix_windows_console
+from colorama import Fore, Back, just_fix_windows_console
 from discord_webhook import DiscordWebhook, DiscordEmbed
 from playsound import playsound
 

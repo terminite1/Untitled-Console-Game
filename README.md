@@ -21,8 +21,8 @@ When you hear a sound, it could be any of these tiers!<br>
 1/21,500,000-47,500,000 = Zenith<br>
 1/47,500,000-80,000,000 = Ethereal<br>
 1/80,000,000-275,000,000 = Celestial<br>
-1/275,000,000 - 1/500,000,000 = Cosmic <br>
-1/500,000,000 - 1/750,000,000 = Mystical<br>
+1/275,000,000-500,000,000 = Cosmic <br>
+1/500,000,000-750,000,000 = Mystical<br>
 1/750,000,000+ = Divine<br>
 
 # EXTRA INFO
@@ -46,10 +46,11 @@ pip install -r requirements.txt
 if any errors pop up, try this!
 ```
 pip install colorama
-pip install requests
-pip install playsound==1.2.2
 pip install discord_webhook
 pip install keyboard
+pip install requests
+pip install playsound==1.2.2
+pip install pyyaml
 ```
 We install playsound 1.2.2 because on newer versions it can cause an error.
 
