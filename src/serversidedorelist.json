@@ -64,6 +64,10 @@
         "rarity": 0.00909090909090909
     },
     {
+        "name": "piece of text",
+        "rarity": 0.008
+    },
+    {
         "name": "2 whole bytes",
         "rarity": 0.006944444444444444
     },
@@ -204,12 +208,20 @@
         "rarity": 5e-05
     },
     {
+        "name": "Illium",
+        "rarity": 4.500045000450004e-05
+    },
+    {
         "name": "coffee creamer",
         "rarity": 4.347826086956522e-05
     },
     {
         "name": "Crantite",
         "rarity": 4.2553191489361704e-05
+    },
+    {
+        "name": "gamepigeonite",
+        "rarity": 4.125072188763303e-05
     },
     {
         "name": "ball",
@@ -258,6 +270,10 @@
     {
         "name": "cylinder",
         "rarity": 1.8181818181818182e-05
+    },
+    {
+        "name": "hyperbolic paraboloid",
+        "rarity": 1.800018000180002e-05
     },
     {
         "name": "invisible staircase",
@@ -340,6 +356,10 @@
         "rarity": 6.666666666666667e-06
     },
     {
+        "name": "tinnitus",
+        "rarity": 6.666666666666667e-06
+    },
+    {
         "name": "gr ape fru it",
         "rarity": 6.25e-06
     },
@@ -353,6 +373,10 @@
     },
     {
         "name": "black opal",
+        "rarity": 5e-06
+    },
+    {
+        "name": "polarine",
         "rarity": 5e-06
     },
     {
@@ -404,6 +428,10 @@
         "rarity": 2.5e-06
     },
     {
+        "name": "Phoenix",
+        "rarity": 2.352941176470588e-06
+    },
+    {
         "name": "Spectral Farts",
         "rarity": 2.3023278837232327e-06
     },
@@ -440,6 +468,10 @@
         "rarity": 1.768143361063715e-06
     },
     {
+        "name": "Pallalindium",
+        "rarity": 1.7543859649122807e-06
+    },
+    {
         "name": "SUPERROBUX",
         "rarity": 1.6666694444490742e-06
     },
@@ -450,6 +482,14 @@
     {
         "name": "tweaking off the zaza",
         "rarity": 1.6666666666666667e-06
+    },
+    {
+        "name": "squish",
+        "rarity": 1.6666666666666667e-06
+    },
+    {
+        "name": "chomik",
+        "rarity": 1.6e-06
     },
     {
         "name": "Robuxian",
@@ -528,6 +568,10 @@
         "rarity": 1.0526315789473683e-06
     },
     {
+        "name": "a flare v1",
+        "rarity": 1.0416666666666667e-06
+    },
+    {
         "name": "jakpot 72",
         "rarity": 1.000001000001e-06
     },
@@ -596,6 +640,10 @@
         "rarity": 4e-07
     },
     {
+        "name": "Kanascirium",
+        "rarity": 3.9992001599680065e-07
+    },
+    {
         "name": "cool lookin ball",
         "rarity": 3.6363636363636366e-07
     },
@@ -660,6 +708,10 @@
         "rarity": 1.8181818181818183e-07
     },
     {
+        "name": "cotton candy ore",
+        "rarity": 1.7300565140260872e-07
+    },
+    {
         "name": "Ionizer581",
         "rarity": 1.721170395869191e-07
     },
@@ -670,6 +722,14 @@
     {
         "name": "cool lookin cylinder",
         "rarity": 1.6666666666666668e-07
+    },
+    {
+        "name": "egg fried rice",
+        "rarity": 1.6666666666666668e-07
+    },
+    {
+        "name": "Unfaithful Large Bubble",
+        "rarity": 1.5447395978394037e-07
     },
     {
         "name": "NUP p y",
@@ -708,6 +768,10 @@
         "rarity": 1.1764705882352942e-07
     },
     {
+        "name": "Cousin Tentacles",
+        "rarity": 1.1688312447293017e-07
+    },
+    {
         "name": "My China",
         "rarity": 1.1250001125000112e-07
     },
@@ -724,6 +788,10 @@
         "rarity": 1.0526315789473685e-07
     },
     {
+        "name": "Optic Nerve",
+        "rarity": 1.0468914182018195e-07
+    },
+    {
         "name": "cool lookin spinning thing",
         "rarity": 1.0256410256410256e-07
     },
@@ -732,12 +800,36 @@
         "rarity": 1.00000010000001e-07
     },
     {
+        "name": "cool lookin legacy orb",
+        "rarity": 1e-07
+    },
+    {
+        "name": "a flare v3",
+        "rarity": 7.352941176470588e-08
+    },
+    {
+        "name": "Petrisornium",
+        "rarity": 5e-08
+    },
+    {
+        "name": "Broken Gumball Machine",
+        "rarity": 4.987032468822943e-08
+    },
+    {
         "name": "Arccentuate",
         "rarity": 4.545454545454546e-08
     },
     {
+        "name": "FLIP PHONE",
+        "rarity": 4.385964912280702e-08
+    },
+    {
         "name": "cheeseball generator",
         "rarity": 4.081632653061225e-08
+    },
+    {
+        "name": "Aurora Lumigem",
+        "rarity": 3.4137931375862075e-08
     },
     {
         "name": "Cyhiraeth",
@@ -752,6 +844,14 @@
         "rarity": 2.5e-08
     },
     {
+        "name": "Bong Bong Ao Tuong",
+        "rarity": 2.3430150620723267e-08
+    },
+    {
+        "name": "FISHORE",
+        "rarity": 2.1063829997872344e-08
+    },
+    {
         "name": "NILNAL",
         "rarity": 2e-08
     },
@@ -762,6 +862,18 @@
     {
         "name": "Zanarchium",
         "rarity": 1.4545454545454546e-08
+    },
+    {
+        "name": "Zanarchium 2",
+        "rarity": 1.45454543338843e-08
+    },
+    {
+        "name": "HACKORE",
+        "rarity": 1.4285714285714286e-08
+    },
+    {
+        "name": "Final boss",
+        "rarity": 1.3937379354559962e-08
     },
     {
         "name": "Genuinium+Accesinite+Fire Crystal+Pandorite Fusion 72",
@@ -790,6 +902,10 @@
     {
         "name": "Neverending Vortex",
         "rarity": 1.5384615384615385e-09
+    },
+    {
+        "name": "Misicaltinite",
+        "rarity": 1.3869621692018423e-09
     },
     {
         "name": "Norepinephrine",
